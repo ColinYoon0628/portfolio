@@ -3,8 +3,6 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-    console.log(`navbarHeight: ${navbarHeight}`);
-
     if (window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
     }else{
@@ -27,6 +25,14 @@ navbarMenu.addEventListener('click', (event)=>{
 const contactMe = document.querySelector('.home__contact');
 contactMe.addEventListener('click',(event) =>{
     scrollIntoView('#contact');
+});
+
+//Make home slowly fade out as it is scrolling
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+    home.style.opacity = 1 -(window.scrollY / homeHeight);
+   
 });
 
 function scrollIntoView(selector){
