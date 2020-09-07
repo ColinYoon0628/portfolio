@@ -18,7 +18,13 @@ navbarMenu.addEventListener('click', (event)=>{
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
+});
+//Navbar toggle button for small screen
+const navbarToggle = document.querySelector('.navbar__toggle-btn');
+navbarToggle.addEventListener('click', () =>{
+    navbarMenu.classList.toggle('open');
 });
 
 //contact me srolling
