@@ -35,6 +35,19 @@ document.addEventListener('scroll', ()=>{
    
 });
 
+//show arrow button as scrolling
+const arrowUp=document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=>{
+    if(window.scrollY > homeHeight /2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');        
+    }
+});
+//handle arrow button to the top
+arrowUp.addEventListener('click',(event) =>{
+    scrollIntoView('#home');
+});
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
