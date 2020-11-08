@@ -120,6 +120,7 @@ p{
     color: var(--color-white);
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
+    font-size: var(--font-regular);
 }
 
 .navbar__menu__item:hover{
@@ -209,7 +210,15 @@ p{
 }
 .major__description{
     font-size: var(--font-small);
+    text-align: center;
 }
+.major__description ul{
+	display: inline-block; 
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 55px;
+}
+
 .school{
     display: flex;
     align-items: center;
@@ -232,50 +241,12 @@ p{
 .school__period{
     font-size: var(--font-micro);
 }
-#skills{
-    background-color: var(--color-yellow);
-}
-.skill{
-    margin-bottom: 8px;
-}
-.skillset{
-    display: flex;
-    background-color: var(--color-light-grey);
-    color: var(--color-light-white);
-}
-.skillset__title{
-    color: var(--color-white);
-}
-.skillset__left{
-    flex-basis: 60%;
-    background-color:var(--color-dark-grey);
-    padding: 20px 40px;
-}
-.skillset__right{
-    flex-basis: 40%;
-}
-.skill__bar{
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-grey);
-}
-.skill__value{
-    height: 3px;
-    background-color: var(--color-orange);
-}
-.skill__description{
-    display: flex;
-    justify-content: space-between;
-}
-.tools{
-    background-color:var(--color-grey);
-}
-.tools,
-.etc{
-    padding: 20px;
-}
 
 /* Work */
+#work{
+    background-color: var(--color-yellow);
+
+}
 .work_categories{
     margin: 40px;
 }
