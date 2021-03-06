@@ -222,10 +222,14 @@ p{
 .school{
     display: flex;
     align-items: center;
+	  margin-bottom: 10px;
+
 }
 .school__description{
     margin: 0 16px;
     text-align: left;
+	  line-height: 1;
+
 }
 .school_logo{
     width: 65px;
