@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colin's Portfolio</title>
     <meta name="description" content="Portfolio for potential world-renowned software engineer Colin">
     <meta name="author" content="Colin">
-    <link rel="icon" type= "image/png" href="imgs/favicon.png"/>
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script src="https://kit.fontawesome.com/8543c20214.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script> 
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-        <img src="imgs/favicon.png" alt="Kunwoo_Yoon" class="kw" style='vertical-align:middle; display:inline;'>
-        <a href="#" >Colin</a>
+            <img src="imgs/favicon.png" alt="Kunwoo_Yoon" class="kw" style='vertical-align:middle; display:inline;'>
+            <a href="#">Colin</a>
         </div>
         <div class="navbar__menu">
-         <ul>
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#work">My work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-         </ul>
+            <ul>
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
         </div>
 
         <!-- Toggle button-->
@@ -37,7 +39,7 @@
     <!-- home -->
     <section id="home">
         <div class="home__container">
-            <img src="imgs/profile.jpg" alt="Colin's profile photo" class="home__avatar"/>
+            <img src="imgs/profile.jpg" alt="Colin's profile photo" class="home__avatar" />
             <h1 class="home__title">Hello, <br>I am Kunwoo Yoon(Colin)</h1>
             <h2 class="home__description">I am software engineering student in Toronto</h2>
             <button class="home__contact" data-link="#contact">Contact Me</button>
@@ -47,136 +49,150 @@
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About Me</h1>
-        <p>I am software engineering development student at Centennial College. I am currently looking for Co-op. I am eager to learn new languages and real-field working environment. 
-            I have ability to accept an obstacle and make it as an opportunity. I also have travelled many countries and now love this country more than anyone.</p>
-            <div class="about__majors">
-                <div class="major">
-                    <div class="major__icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h2 class="major__title">Front-end</h2>
-                    <div class="major__description">
-                        <ul>
-              <li><span>JavaScript</span></li>
-              <li><span>HTML, CSS</span></li>
-              <li><span>React</span></li>
-              <li><span>React-Native</span></li>
-              <li><span>Angular</span></li>
-              <li><span>Responsive Web Design</span></li>        
-                        </ul>
-                    </div>   
+        <p>I am software engineering development student at Centennial College.
+            <br>I am currently working at Wimtach as a
+            frontend developer.
+            <br>
+            I have set of skills, ranging from design to HTML + CSS + Javascript, Angular webstite and React-native
+            mobile application.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-html5"></i>
                 </div>
-
-                <div class="major">
-                    <div class="major__icon" id= "back_icon">
-                        <i class="fab fa-stack-exchange"></i>
-                    </div>
-                    <h2 class="major__title">Back-end</h2>
-                    <div class="major__description">
-                        <ul>
-                            <li><span>C#</span></li>
-                            <li><span>Java</span></li>
-                            <li><span>MY SQL / ORACLE</span></li>
-                            <li><span>MONGO DB</span></li>
-                            <li><span>Object Oriented Design</span></li> 
-                            <li><span>Node JS - Express</span></li>                              
-                        </ul>
-                    </div>   
-                </div>
-            </div>   
-            <div class="about__school">
-                <div class="school">
-                    <img src="imgs/school/school.png" alt="Centennial_logo" class="school_logo">
-                    <div class="school__description">
-                        <p class="school__name">Centennial College</p>
-                        <p class="school__period">2018.09 ~ current</p>
-                    </div>
-
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">
+                    <ul>
+                        <li><span>JavaScript</span></li>
+                        <li><span>HTML, CSS</span></li>
+                        <li><span>React</span></li>
+                        <li><span>React-Native</span></li>
+                        <li><span>Angular</span></li>
+                        <li><span>TypeScript</span></li>
+                        <li><span>Responsive Web Design</span></li>
+                    </ul>
                 </div>
             </div>
-            <div class="about__school">
-        <div class="school">
-          <img
-            src="imgs/school/school.png"
-            alt="Centennial_logo"
-            class="school_logo"
-          />
-          <div class="school__description">
-            <p class="school__name">Frontend Developer(Co-op)</p>
-            <p class="school__period">
-              Developing new web applications, maintaining existing web ones,
-              and deploying/supporting existing systems.
-            </p>
-            <p class="school__period">2021.01 ~ current</p>
-          </div>
+
+            <div class="major">
+                <div class="major__icon" id="back_icon">
+                    <i class="fab fa-stack-exchange"></i>
+                </div>
+                <h2 class="major__title">Back-end</h2>
+                <div class="major__description">
+                    <ul>
+                        <li><span>C#</span></li>
+                        <li><span>Java</span></li>
+                        <li><span>MY SQL / ORACLE</span></li>
+                        <li><span>MONGO DB</span></li>
+                        <li><span>Object Oriented Design</span></li>
+                        <li><span>Node JS - Express</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="about__school">
+            <div class="school">
+                <img src="imgs/school/school.png" alt="Centennial_logo" class="school_logo">
+                <div class="school__description">
+                    <p class="school__name">Centennial College</p>
+                    <p class="school__period">2018.09 ~ current</p>
+                </div>
+
+            </div>
+        </div>
+        <hr style="margin-bottom: 10px;">
+        <div class="about__experience">
+            <div class="school">
+                <img src="imgs/wimtach-logo-en@2x.png" alt="Centennial_logo" class="school_logo" />
+                <div class="school__description">
+                    <p class="school__name">Wimtach - Front-end Developer</p>
+                    <p class="school__period">
+                    </p>
+                    <p class="school__period">2021.01 ~ current</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
-    <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories ">
-            <button class="category__btn selected" data-filter="*">All<span class="category__count">3</span></button>
-            <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">1</span></button>
-            <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">2</span></button>
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories ">
+                <button class="category__btn selected" data-filter="*">All<span
+                        class="category__count">3</span></button>
+                <button class="category__btn" data-filter="front-end">Front-end<span
+                        class="category__count">1</span></button>
+                <button class="category__btn" data-filter="back-end">Back-end<span
+                        class="category__count">2</span></button>
+            </div>
+            <div class="work__projects">
+                <a href="https://social-web-project1.herokuapp.com/index.php" class="project" target="black"
+                    data-type="back-end">
+                    <img src="imgs/project1.PNG" alt="project1" srcset="/assets/image.png **0.8**x" alt="image"
+                        class="project__img">
+                    <div class="project__description">
+                        <h3>Project1</h3>
+                        <span>A social networking website using Object Oriented approach, including features such as
+                            newsfeeds, profiles and friend system.</span>
+                    </div>
+                </a>
+                <a href="https://project2-webpage.herokuapp.com/" class="project" target="black" data-type="back-end">
+                    <img src="imgs/project2.PNG" alt="project2" srcset="/assets/image.png **0.8**x" alt="image"
+                        class="project__img">
+                    <div class="project__description">
+                        <h3>Express personal website</h3>
+                        <span>Website using ExpressJS and implementing EJS templating engine.
+                            <br>Mongo database used on MongoDB Atlas.
+                            <br>Featured with login and contacts list update, edit and delete.
+                        </span>
+                    </div>
+                </a>
+                <a href="https://ykw0628.github.io/YotubeMobile/" class="project" target="black" data-type="front-end">
+                    <img src="imgs/youtube.png" alt="project1" srcset="/assets/image.png **0.8**x" alt="image"
+                        class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube colon</h3>
+                        <span>Excercise for cloning Youtube Website </span>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="work__projects">
-            <a href="https://social-web-project1.herokuapp.com/index.php" class="project" target="black" data-type="back-end">
-                <img src="imgs/project1.PNG" alt="project1" srcset="/assets/image.png **0.8**x" alt="image" class="project__img">
-                <div class="project__description">
-                    <h3>Project1</h3>
-                    <span>A social networking website using Object Oriented approach, including features such as newsfeeds, profiles and friend system.</span>
-                </div>
-            </a>
-            <a href="https://project2-webpage.herokuapp.com/" class="project" target="black" data-type="back-end">
-                <img src="imgs/project2.PNG" alt="project2" srcset="/assets/image.png **0.8**x" alt="image" class="project__img">
-                <div class="project__description">
-                    <h3>Express personal website</h3>
-                    <span>Website using ExpressJS and implementing EJS templating engine.
-                        <br>Mongo database used on MongoDB Atlas.
-                        <br>Featured with login and contacts list update, edit and delete.
-                    </span>
-                </div>
-            </a>       
-            <a href="https://ykw0628.github.io/YotubeMobile/" class="project" target="black" data-type="front-end">
-                <img src="imgs/youtube.png" alt="project1" srcset="/assets/image.png **0.8**x" alt="image" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube colon</h3>
-                    <span>Excercise for cloning Youtube Website </span>
-                </div>
-            </a>
-        </div>
-    </div>
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-    <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="imgs/young.jpg" alt="people" class="testimonial__avatar"/>
-                <div class="testimonial__speech-bubble">
-                    <p>Colin is a motivated, forward-thinking student. He is very hardworking and good at Software development.</p><br><br>
-                    <p class="name"><a href="https://www.linkedin.com/in/younghwi-kim-4a9603194/">Younghwi Kim</a>/Web Developer at RBC</p>
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="imgs/young.jpg" alt="people" class="testimonial__avatar" />
+                    <div class="testimonial__speech-bubble">
+                        <p>Colin is a motivated, forward-thinking student. He is very hardworking and good at Software
+                            development.</p><br><br>
+                        <p class="name"><a href="https://www.linkedin.com/in/younghwi-kim-4a9603194/">Younghwi
+                                Kim</a>/Web Developer at RBC</p>
+                    </div>
                 </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial__speech-bubble">
-                    <p>It’s my pleasure to provide this letter of recommendation to Kunwoo Yoon.
-                        We were in the same class for two semesters and he is a hard worker as well as a good team player
-                        that always thrives in a team environment. He remains engaged and focused on delivering his best at all time.</p><br><br>
-                    <p class="name"><a href="https://www.linkedin.com/in/lushi-cao-ab4571194/">Lushi Cao</a>ServiceNow Developer/Administrator Co-op at Tangerine
-</p>
-                </div>
-                <img src="imgs/lushi.jpg" alt="people" class="testimonial__avatar"/>
+                <div class="testimonial">
+                    <div class="testimonial__speech-bubble">
+                        <p>It’s my pleasure to provide this letter of recommendation to Kunwoo Yoon.
+                            We were in the same class for two semesters and he is a hard worker as well as a good team
+                            player
+                            that always thrives in a team environment. He remains engaged and focused on delivering his
+                            best at all time.</p><br><br>
+                        <p class="name"><a href="https://www.linkedin.com/in/lushi-cao-ab4571194/">Lushi
+                                Cao</a>ServiceNow Developer/Administrator Co-op at Tangerine
+                        </p>
+                    </div>
+                    <img src="imgs/lushi.jpg" alt="people" class="testimonial__avatar" />
 
+                </div>
             </div>
         </div>
-    </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
@@ -197,4 +213,5 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 </body>
+
 </html>
